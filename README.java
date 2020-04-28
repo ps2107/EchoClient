@@ -1,7 +1,6 @@
 # EchoClient
-Advanced Programming Week 1
+//Advanced Programming Week 1
 
-package SimpleChat;
 import java.net.*;
 import java.io.*;
 import java.io.PrintWriter;
@@ -42,7 +41,13 @@ public class EchoClient {
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
+public static void main(String[] args) {
+        // write your code here
+        EchoClient server = new EchoClient("localhost", 7777);
+        server.run();
 
+
+    }
     }
 
 }
